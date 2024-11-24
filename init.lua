@@ -851,12 +851,6 @@ require('lazy').setup({
     --   -- You can configure highlights by doing something like:
     --   vim.cmd.hi 'Comment gui=none'
     -- end,
-    'Shatur/neovim-ayu',
-    priority = 1000, -- Make sure to load this before all the other start plugins.
-    config = function()
-      -- Set the colorscheme to ayu-mirage
-      vim.cmd.colorscheme 'ayu-mirage'
-    end,
   },
 
   -- Highlight todo, notes, etc in comments
@@ -942,6 +936,7 @@ require('lazy').setup({
   -- require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
   require 'kickstart.plugins.copilot',
   require 'kickstart.plugins.alpha',
+  require 'kickstart.plugins.ayu',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
