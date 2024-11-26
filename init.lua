@@ -937,6 +937,8 @@ require('lazy').setup({
   require 'kickstart.plugins.copilot',
   require 'kickstart.plugins.alpha',
   require 'kickstart.plugins.ayu',
+  require 'kickstart.plugins.dap',
+  require 'kickstart.plugins.roslyn',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
